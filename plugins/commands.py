@@ -146,7 +146,7 @@ async def start(client, message):
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
-            await asyncio.sleep(2)
+            await asyncio.sleep(3)
         await sts.edit(
             text=f"all files has been successfully sent to Target Channel"
             )
